@@ -22,7 +22,7 @@
 
       body > *:not(nav) > * {
         margin: 0;
-        padding: 15px;
+        padding: 5px;
       }
 
       body > *:not(nav) > *:hover {

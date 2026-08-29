@@ -37,6 +37,7 @@
         border: none;
         border-bottom: 1px solid #858585;
         z-index: 1000;
+        background-color: #2a2a3e;
       }
       nav a {
         color: #e0e0e0;

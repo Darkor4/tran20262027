@@ -4,23 +4,25 @@
   <head>
     <title>Template</title>
     <link rel="icon" type="image/png" href="favicon.png">
+
     <meta charset="UTF-8">
 
     <style>
-      /* basic reset so sticky can reach the viewport edge */
+      /* keep page flush with viewport */
       body { margin: 0; font-family: system-ui, sans-serif; }
 
-      /* Sticky navbar: MUST include top (or bottom) */
-      nav {
-        position: sticky;
-        top: 0;               /* required for stickiness */
-        z-index: 999;         /* keep it above content */
+      /* Fixed navbar so it always stays visible when scrolling */
+      .site-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
         background-color: peru;
         color: gainsboro;
       }
 
-      /* layout tweaks so the nav spans the page */
-      nav ul {
+      .site-nav ul {
         margin: 0;
         padding: 0.5rem 1rem;
         list-style: none;
@@ -29,29 +31,33 @@
         align-items: center;
       }
 
-      nav li { display: inline-block; }
-      nav li:first-child { background-color: rgba(0,0,0,0.5); }
-      nav a { color: inherit; text-decoration: none; padding: 0.25rem 0.5rem; display: block; }
+      .site-nav li { display: inline-block; }
+      .site-nav li:first-child { background-color: rgba(0,0,0,0.5); }
+      .site-nav a { color: inherit; text-decoration: none; padding: 0.25rem 0.5rem; display: block; }
+
+      /* Add top padding so page content isn't hidden behind the fixed nav. Adjust as needed. */
+      main { padding-top: 3.5rem; }
     </style>
   </head>
 
   <body>
     <header>
       <h1>2026 2027</h1>
-      <nav>
-        <ul>
-          <li><a href="./">Homepage</a></li>
-          <li><a href="work">Your work</a></li>
-          <li><a href="references">references</a></li>
-        </ul>
-      </nav>
     </header>
+
+    <nav class="site-nav">
+      <ul>
+        <li><a href="./">Homepage</a></li>
+        <li><a href="work">Your work</a></li>
+        <li><a href="references">references</a></li>
+      </ul>
+    </nav>
 
     <main>
       <h2>Why does this site exist?</h2>
       <p>This site is for Mr. Tran's 2026 2027 8th grade class to put up their digital work.</p>
-      <!-- add extra content here to test scrolling -->
-      <div style="height:2000px"></div>
+      <!-- extra height for testing scrolling -->
+      <div style="height:1500px"></div>
     </main>
 
     <footer>

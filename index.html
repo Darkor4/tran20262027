@@ -11,8 +11,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
-      /* Basic site styles only. Removed temporary sticky/fixed nav debugging CSS. */
-      body { margin: 0; font-family: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, monospace; }
+      /* VSCode Dark Theme inspired styling */
+      body { 
+        margin: 0; 
+        font-family: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+        background-color: #1e1e1e;
+      }
+
+      body > * {
+        background-color: #1e1e1e;
+        border: 1px solid #858585;
+      }
 
       header h1 { margin: 0; padding: 0.5rem 1rem; }
 
@@ -26,7 +35,7 @@
   <body>
     <nav aria-label="Main navigation">
       <ul>
-        <li><a href="./">Homepage</a></li>
+        <li style="background-color: rgba(0, 0, 0, 0.1);"><a href="./">Homepage</a></li>
         <li><a href="work">Your work</a></li>
         <li><a href="references">references</a></li>
       </ul>
@@ -36,7 +45,7 @@
       <h1>2026 2027</h1>
     </header>
 
-    <main style="background-color: rgba(0, 0, 0, 0.1); padding: 1rem;">
+    <main>
       <h2>Why does this site exist?</h2>
       <p>This site is for Mr. Tran's 2026 2027 8th grade class to put up their digital work.</p>
     </main>

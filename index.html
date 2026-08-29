@@ -11,41 +11,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
-      :root { --nav-height: 3.5rem; }
-
-      /* keep page flush with viewport */
+      /* Basic site styles only. Removed temporary sticky/fixed nav debugging CSS. */
       body { margin: 0; font-family: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, monospace; }
 
-      /* Fixed navbar so it always stays visible when scrolling */
-      nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: var(--nav-height);
-        box-sizing: border-box;
-        z-index: 999;
-        background-color: peru;
-        color: gainsboro;
-      }
+      header h1 { margin: 0; padding: 0.5rem 1rem; }
 
-      nav ul {
-        margin: 0;
-        padding: 0 1rem; /* horizontal padding only, vertical handled by nav height */
-        height: 100%;
-        list-style: none;
-        display: flex;
-        gap: 0.5rem;
-        align-items: center; /* vertically center items inside nav */
-      }
-
-      nav li { display: inline-block; }
-      nav li:first-child { background-color: rgba(0,0,0,0.5); }
+      /* keep simple nav styling but no positioning rules */
+      nav { background-color: peru; color: gainsboro; }
+      nav ul { margin: 0; padding: 0 1rem; list-style: none; display: flex; gap: 0.5rem; align-items: center; }
       nav a { color: inherit; text-decoration: none; padding: 0.25rem 0.5rem; display: block; }
-
-      /* Add top padding so page content isn't hidden behind the fixed nav. Only main needs padding. */
-      main { padding-top: var(--nav-height); }
-      header { padding: 0; }
     </style>
   </head>
 
@@ -65,8 +39,6 @@
     <main>
       <h2>Why does this site exist?</h2>
       <p>This site is for Mr. Tran's 2026 2027 8th grade class to put up their digital work.</p>
-      <!-- extra height for testing scrolling -->
-      <div style="height:1500px"></div>
     </main>
 
     <footer>

@@ -11,7 +11,7 @@
 
       body > * {
         background-color: #141414;
-        border: 1px solid #858585;
+        border: 1px solid #808085;
       }
 
       body > *:not(nav) {

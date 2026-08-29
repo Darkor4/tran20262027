@@ -10,7 +10,7 @@
         padding: 5px;
       }
       ol {
-        padding-left: 40px;
+        padding-left: 40px !important;
         color: snow;
       }
 

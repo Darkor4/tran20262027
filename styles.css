@@ -11,7 +11,7 @@
 
       body > * {
         background-color: #141414;
-        border: 1px solid #2a2a3e;
+        border: 1px solid #3a3a3e;
       }
 
       body > *:not(nav) {
@@ -22,7 +22,7 @@
 
       body > *:not(nav) > * {
         margin: 0;
-        padding: 5px;
+        padding: 15px;
       }
 
       body > *:not(nav) > *:hover {

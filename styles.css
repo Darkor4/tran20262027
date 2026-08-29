@@ -9,6 +9,10 @@
         color: #e0e0e0;
         padding: 5px;
       }
+      ol {
+        padding-left: 40px;
+        color: snow;
+      }
 
       body > * {
         background-color: #141414;

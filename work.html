@@ -21,17 +21,20 @@
       }
       h3 {
         color: #007ACC;
-        padding-left: 20px;
+        padding-left: 20px !important;
       }
       h4 {
         color: #d7ba7d;
-        padding-left: 40px;
+        padding-left: 40px !important;
       }
-      h5 {
+      div h4 {
         color: #f44747;
       }
-      div:has(h5) {
-        padding-left: 60px;
+      div:has(h4) {
+        padding-left: 60px !important;
+      }
+      div:has(h4) * {
+        display: block;
       }
     </style>
   </head>
@@ -95,7 +98,7 @@
         <h3>Eliot Fishman</h3>
           <h4>Scratch</h4>
             <div>
-              <h5>Warm Up</h5>
+              <h4>Warm Up</h4>
               <a href="https://scratch.mit.edu/projects/1375131070" target="_blank">https://scratch.mit.edu/projects/1375131070</a>
               <iframe src="https://scratch.mit.edu/projects/1375131070/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
             </div>

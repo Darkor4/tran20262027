@@ -58,9 +58,9 @@
       
       hr {
         height: 0px;
-        margin-left: 15px;
-        margin-right: 15px;
-        padding: 0;
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        padding: 0 !important;
       }
 
 
